@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {Navbar, Nav, Container} from 'react-bootstrap';
-import logo from "./public/webLogo.jpg";
+import logo from "./public/webLogo.JPG";
 
 const Navigation = () => {
   return (
@@ -14,9 +14,9 @@ const Navigation = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-                        <Nav.Link as={Link} to="/news">News</Nav.Link>
+                        <Nav.Link as={Link} to="/">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/2_blog">Blog</Nav.Link>
+                        <Nav.Link as={Link} to="/3_news">News</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

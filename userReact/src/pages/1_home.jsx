@@ -7,7 +7,7 @@ import Footer from './components/04Footer.jsx';
 const home = () => {
   return (
     <div>
-      <Navigation />
+      {/* <Navigation /> */}
       <div className="container">
         <Carousel />
         <div className="text-section">
@@ -25,7 +25,7 @@ const home = () => {
         </div>
         <ContactForm />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
