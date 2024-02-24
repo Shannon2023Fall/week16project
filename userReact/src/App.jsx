@@ -15,7 +15,9 @@ const App = () => {
           <Route exact path="/" component={Homepage} />
           <Route exact path="/Blog" component={Blog} />
           <Route exact path="/News" component={News} />
-          {/* Add more routes as needed */}
+          
+          <Route component={NotFound} />
+
         </Switch>
         <Footer />
       </div>

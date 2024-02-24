@@ -2,13 +2,13 @@ import React from 'react';
 
 function Carousel() {
   return (
-    <div className="homepageCaroulse">
+    <div className="homepageCarousel">
       <div className="myCarousel">
         <div
           id="carouselIndicators"
           className="carousel slide"
           data-ride="carousel"
-        //   style="display: block"
+          style="display: block"
         >
           <ol className="carousel-indicators">
             <li
@@ -26,35 +26,35 @@ function Carousel() {
             <div className="carousel-item active">
               <img
                 className="d-block w-100"
-                src="public/banEScooter.jpg"
+                src="./public/banEScooter.jpg"
                 alt="First slide"
               />
             </div>
             <div cclassName="carousel-item">
               <img
                 className="d-block w-100"
-                src="public/EScooterBlockFootpath.jpg"
+                src="./public/EScooterBlockFootpath.jpg"
                 alt="Second slide"
               />
             </div>
             <div className="carousel-item">
               <img
                 className="d-block w-100"
-                src="public/EScooterCrashCar.jpg"
+                src="./public/EScooterCrashCar.jpg"
                 alt="Third slide"
               />
             </div>
             <div className="carousel-item">
               <img
                 className="d-block w-100"
-                src="public/EScooterGPSphone.jpg"
+                src=".//EScooterGPSphone.jpg"
                 alt="Fourth slide"
               />
             </div>
             <div className="carousel-item">
               <img
                 className="d-block w-100"
-                src="public/EScooterHitFemale.jpg"
+                src="./public/EScooterHitFemale.jpg"
                 alt="Fifth slide"
               />
             </div>

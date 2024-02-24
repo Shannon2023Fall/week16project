@@ -20,6 +20,7 @@ const contactForm = () => {
               placeholder="required"
               required
             />
+          </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
@@ -39,7 +40,6 @@ const contactForm = () => {
               rows="15"
               required></textarea>
           </div>  
-        </div>
         <button type="submit" className="btn btn-primary sendButton">Submit</button>
       </form>
       </div>

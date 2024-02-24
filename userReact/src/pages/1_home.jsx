@@ -3,6 +3,7 @@ import Navigation from './components/01Navigation.jsx';
 import Carousel from './components/02Carousel.jsx';
 import ContactForm from './components/03Contact.jsx';
 import Footer from './components/04Footer.jsx';
+import "styles.css";
 
 const home = () => {
   return (
