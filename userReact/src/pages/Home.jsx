@@ -1,14 +1,11 @@
 import React from 'react';
-import Navigation from './components/Navigation.jsx';
 import Carousel from './components/Carousel.jsx';
 import ContactForm from './components/Contact.jsx';
-import Footer from './components/Footer.jsx';
 import "styles.css";
 
 const Home = () => {
   return (
     <div>
-      {/* <Navigation /> */}
       <div className="container">
         <Carousel />
         <div className="text-section">
@@ -26,7 +23,6 @@ const Home = () => {
         </div>
         <ContactForm />
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

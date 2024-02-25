@@ -13,7 +13,7 @@ const App = () => {
         <Navigation />
         <Switch>
           <Route path="/" component={Home} />
-          <Route path="/Blog" component={Blog} />
+          {/* <Route path="/Blog" component={Blog} /> */}
           <Route path="/News" component={News} />
           
           <Route component={NotFound} />
