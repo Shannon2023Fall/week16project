@@ -1,11 +1,11 @@
 import React from 'react';
-import Navigation from './components/01Navigation.jsx';
-import Carousel from './components/02Carousel.jsx';
-import ContactForm from './components/03Contact.jsx';
-import Footer from './components/04Footer.jsx';
+import Navigation from './components/Navigation.jsx';
+import Carousel from './components/Carousel.jsx';
+import ContactForm from './components/Contact.jsx';
+import Footer from './components/Footer.jsx';
 import "styles.css";
 
-const home = () => {
+const Home = () => {
   return (
     <div>
       {/* <Navigation /> */}
@@ -31,4 +31,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

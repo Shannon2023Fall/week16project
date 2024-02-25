@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navigation from './components/01Navigation';
-import Homepage from './pages/1_home';
-import Blog from './pages/2_blog';
-import News from './pages/3_news';
-import Footer from './components/04Footer';
+import Navigation from './components/Navigation';
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+import News from './pages/News';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <div className="app-container">
         <Navigation />
         <Switch>
-          <Route path="/" component={Homepage} />
+          <Route path="/" component={Home} />
           <Route path="/Blog" component={Blog} />
           <Route path="/News" component={News} />
           

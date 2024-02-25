@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import events from './ESaccidents.json';
 
-const blog = () => {
+const Blog = () => {
     const [acciData, setAcciData] = useState([]);
     console.log(acciData);
     const [searchTerm, setSearchTerm] = useState('');
@@ -205,4 +205,4 @@ const blog = () => {
     );
 };
 
-export default blog;
+export default Blog;

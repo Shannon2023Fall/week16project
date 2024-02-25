@@ -1,6 +1,6 @@
 import React from 'react';
 
-const contactForm = () => {
+const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -58,4 +58,4 @@ const contactForm = () => {
   );
 };
 
-export default contactForm;
+export default Contact;
