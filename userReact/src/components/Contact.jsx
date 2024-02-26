@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false); // State to manage form submission
+
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    // Handle form submission logic here
+    setSubmitted(true); // Set submitted to true after form submission
   };
+
 //On Submit return a message repeating input data and thank you note.
   return (
     <div className="contact-container">
@@ -42,7 +46,14 @@ const Contact = () => {
           </div>  
         <button type="submit" className="btn btn-primary sendButton">Submit</button>
       </form>
+
+      {/* Display the thank you message if the form is submitted */}
+      {submitted && (
+      <div className="thank-you-message">
+      Thanks for your contact! While waiting for our response you can reach out event reporters at the same region.
       </div>
+      )}
+    </div>
 
       <div className="google-map-container">
         <iframe
