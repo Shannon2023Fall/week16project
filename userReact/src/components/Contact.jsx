@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-form-container">
-        <h2>Contact Us</h2>
+        <h4>Contact Us</h4>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
@@ -32,12 +32,12 @@ const Contact = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="description">Description of the Situation</label>
+            <label htmlFor="description">Describe the Situation</label>
             <textarea
               id="description"
               name="description"
               className="form-control"
-              rows="15"
+              rows="7"
               required></textarea>
           </div>  
         <button type="submit" className="btn btn-primary sendButton">Submit</button>

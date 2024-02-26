@@ -1,13 +1,13 @@
 import React from 'react';
-import Carousel from './components/Carousel.jsx';
-import ContactForm from './components/Contact.jsx';
-import "styles.css";
+import Contact from '../components/Contact.jsx';
+/* import "./Home.css"; */
 
 const Home = () => {
+
   return (
     <div>
       <div className="container">
-        <Carousel />
+
         <div className="text-section">
           <h2>Welcome to Our Website</h2>
           <p>
@@ -21,7 +21,7 @@ const Home = () => {
         <em>How is this fair? If the government is not ready to take actions to E-Scooter hitters. Then why are you approving the E-Scooter projects?</em>
         </p>
         </div>
-        <ContactForm />
+        <Contact />
       </div>
     </div>
   );

@@ -1,86 +1,66 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function Carousel() {
-  return (
-    <div className="homepageCarousel">
-      <div className="myCarousel">
-        <div
-          id="carouselIndicators"
-          className="carousel slide"
-          data-ride="carousel"
-          style="display: block"
-        >
-          <ol className="carousel-indicators">
-            <li
-              data-target="#carouselIndicators"
-              data-slide-to="0"
-              className="active"
-            ></li> 
-            <li data-target="#carouselIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselIndicators" data-slide-to="4"></li>
-            <li data-target="#carouselIndicators" data-slide-to="5"></li>
-          </ol>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img
-                className="d-block w-100"
-                src="./public/banEScooter.jpg"
-                alt="First slide"
-              />
-            </div>
-            <div cclassName="carousel-item">
-              <img
-                className="d-block w-100"
-                src="./public/EScooterBlockFootpath.jpg"
-                alt="Second slide"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                className="d-block w-100"
-                src="./public/EScooterCrashCar.jpg"
-                alt="Third slide"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                className="d-block w-100"
-                src=".//EScooterGPSphone.jpg"
-                alt="Fourth slide"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                className="d-block w-100"
-                src="./public/EScooterHitFemale.jpg"
-                alt="Fifth slide"
-              />
-            </div>
-          </div>
-          <a
-            className="carousel-control-prev"
-            href="#carouselIndicators"
-            role="button"
-            data-slide="prev"
-          >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
-          </a>
-          <a
-            className="carousel-control-next"
-            href="#carouselIndicators"
-            role="button"
-            data-slide="next"
-          >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="sr-only">Next</span>
-          </a>
-        </div>
+  //Add Carousel   
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  {/* <!-- Indicators --> */}
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  {/* <!-- Wrapper for slides --> */}
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="/EScooterBlockFootpath.jpg" alt="First Slide" />
+      <div class="carousel-caption">
+        <h3>E-Scooters block footpath</h3>
       </div>
     </div>
-  );
+
+    <div class="item">
+      <img src="/EScooterCrashCar.jpg" alt="Second Slide" />
+      <div class="carousel-caption">
+        <h3>E-Scooter hits car</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="/EScooterHitFemale.jpg" alt="Third Slide" />
+      <div class="carousel-caption">
+        <h3>E-Scooter hits people on footpath</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="/EScooterGPSphone.jpg" alt="Forth Slide" />
+      <div class="carousel-caption">
+        <h3>GPS data stored by E-Scooter provider</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="/banEScooter.jpg" alt="Fifth Slide" />
+      <div class="carousel-caption">
+        <h3>Ban E-Scooter</h3>
+      </div>
+    </div>
+  </div>
+
+  {/* <!-- Left and right controls --> */}
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 }
 
 export default Carousel;

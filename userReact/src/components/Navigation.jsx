@@ -1,28 +1,52 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import {Navbar, Nav, Container} from 'react-bootstrap';
-import logo from "./public/webLogo.JPG";
+import React, { useState, useEffect } from "react";
+import {Outlet, Link} from "react-router-dom";
+import Logo from '/webLogo.JPG?url';
+/* import './Navigation.css'; */
 
 const Navigation = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    //CSS stays in the same file as .jsx script
-    <Navbar bg="light" expand="lg" style={{position: 'fixed', top: 0, width: '100%', zlndex: 1000}}>
-              <Container>
-                <Navbar.Brand as={Link} to="/">
-                  <img src={logo} width="30" height="30" className="d-inline-block aligh-top" alt="Logo" />{''}
-                  E-Scooter accidents and unsolved compensations
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link exact to="/pages/1_home">Home</Nav.Link>
-                        <Nav.Link to="/pages/2_blog">Blog</Nav.Link>
-                        <Nav.Link to="/pages/3_news">News</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-    </Navbar>
-  );
+    <>
+    <div className={`navbar ${isSticky ? 'sticky' : ''}`}>
+      <div className="logo-container">
+        <img src={Logo} alt="Logo" width="14%" />
+      </div>
+
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link to="/news">News</Link>
+        </li>
+      </ul>
+    </nav>
+    
+    <Outlet />
+    </div>
+    </>
+    )
 };
 
 export default Navigation;
