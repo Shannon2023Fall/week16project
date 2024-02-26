@@ -5,7 +5,7 @@ const Contact = () => {
     event.preventDefault();
 
   };
-
+//On Submit return a message repeating input data and thank you note.
   return (
     <div className="contact-container">
       <div className="contact-form-container">
