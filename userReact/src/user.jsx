@@ -18,8 +18,9 @@ return (
       <Route path="news" element={<News />} />
     </Route>
   </Routes>
-  </BrowserRouter>
+
   <Footer />
+  </BrowserRouter>
 )
 };
 
